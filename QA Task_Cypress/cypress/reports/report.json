@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-16T16:12:21.759Z",
+    "end": "2022-01-16T16:12:39.888Z",
+    "duration": 18129,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5802549e-7274-4aab-bc4a-5dd10cb8a658",
+      "title": "",
+      "fullFile": "cypress/integration/functionality_test.js",
+      "file": "cypress/integration/functionality_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ca86677-d5e4-43e5-8f7b-cea882adcf2a",
+          "title": "Functionality Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Senario 1 to 5",
+              "fullTitle": "Functionality Test Senario 1 to 5",
+              "timedOut": null,
+              "duration": 15388,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://react-shopping-cart-67954.firebaseapp.com/\");\ncy.wait(2000); // Select on the XS button \ncy.get(':nth-child(2) > label > .checkmark').click();\ncy.wait(2000); // Add to cart\ncy.get('.shelf-item__buy-btn').click();\ncy.wait(2000);\ncy.get('.shelf-item__details > .title').should('contain', 'T-Shirt'); //Checkout button and Handel Alert\ncy.get('.buy-btn').click();\ncy.on('window:confirm', str => {\n  expect(str).to.equal('Checkout - Subtotal: $ 43.60');\n}); //Close checkout\ncy.get('.float-cart__close-btn').click(); //Un select the XS button \ncy.get(':nth-child(2) > label > .checkmark').click();\ncy.wait(2000); //cy.get('#select').select('lowestprice')\ncy.get('select').select('lowestprice').should('be.visible').and('contain', 'low');\ncy.wait(2000);\ncy.scrollTo('bottom');",
+              "err": {},
+              "uuid": "6034f0af-2038-4586-9302-256f03b2d852",
+              "parentUUID": "5ca86677-d5e4-43e5-8f7b-cea882adcf2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6034f0af-2038-4586-9302-256f03b2d852"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15388,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

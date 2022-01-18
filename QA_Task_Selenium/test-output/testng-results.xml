@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-17T18:40:06 IRST" name="Default suite" finished-at="2022-01-17T18:40:28 IRST" duration-ms="22383">
+    <groups>
+    </groups>
+    <test started-at="2022-01-17T18:40:06 IRST" name="Default test" finished-at="2022-01-17T18:40:28 IRST" duration-ms="22383">
+      <class name="StepDefinitions.FunctionalTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:StepDefinitions.FunctionalTest@47e2e487]" started-at="2022-01-17T18:40:06 IRST" name="browserSetup" finished-at="2022-01-17T18:40:11 IRST" duration-ms="5402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="the_browser_launched_and_opened()[pri:0, instance:StepDefinitions.FunctionalTest@47e2e487]" started-at="2022-01-17T18:40:11 IRST" name="the_browser_launched_and_opened" finished-at="2022-01-17T18:40:28 IRST" duration-ms="16854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_browser_launched_and_opened -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:StepDefinitions.FunctionalTest@47e2e487]" started-at="2022-01-17T18:40:28 IRST" name="teardown" finished-at="2022-01-17T18:40:28 IRST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- StepDefinitions.FunctionalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
