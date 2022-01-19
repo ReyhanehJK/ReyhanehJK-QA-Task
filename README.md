@@ -91,7 +91,7 @@ you just need to download and install Testproject Agent and Run code and check r
 ## Installation
 
 npm install --save-dev cypress-axe
-```
+
 
 In order to create the package.json, open Terminal in Visual Studio Code Menu and type the command below:
 
