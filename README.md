@@ -24,6 +24,7 @@ Install from git (using git clone)
 Run "mvn clean test" from project directory
 
 ### Dependencies
+
 Maven (For managing dependencies) IntelliJ or Eclipse Installation
 Install from git (using git clone) Run "mvn clean test" from project directory
 
